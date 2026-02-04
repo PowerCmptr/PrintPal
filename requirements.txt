@@ -1,0 +1,19 @@
+# Core dependencies (ALWAYS needed)
+Pillow
+numpy
+pyyaml
+
+# Optional: Network/API features
+requests
+websockets
+
+# Optional: Raspberry Pi hardware support
+RPi.GPIO
+spidev
+adafruit-circuitpython-ili9341
+
+# Optional: Development tools
+black
+flake8
+pytest
+pytest-cov

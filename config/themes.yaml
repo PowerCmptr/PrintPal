@@ -1,0 +1,95 @@
+# UI Themes
+
+dark:
+  name: "Dark Theme"
+  colors:
+    primary: [13, 17, 23]
+    secondary: [22, 27, 34]
+    tertiary: [33, 38, 45]
+    accent: [47, 129, 247]
+    success: [46, 204, 113]
+    warning: [241, 196, 15]
+    error: [231, 76, 60]
+    text_primary: [240, 246, 252]
+    text_secondary: [139, 148, 158]
+  fonts:
+    h1: "Inter-Bold"
+    h2: "Inter-Bold"
+    h3: "Inter-Bold"
+    body: "Inter-Regular"
+    small: "Inter-Regular"
+  animations:
+    duration: 0.3
+    easing: "ease_out_quad"
+
+light:
+  name: "Light Theme"
+  colors:
+    primary: [255, 255, 255]
+    secondary: [242, 242, 247]
+    tertiary: [229, 229, 234]
+    accent: [0, 122, 255]
+    success: [52, 199, 89]
+    warning: [255, 149, 0]
+    error: [255, 59, 48]
+    text_primary: [0, 0, 0]
+    text_secondary: [60, 60, 67]
+  fonts:
+    h1: "Inter-Bold"
+    h2: "Inter-Bold"
+    h3: "Inter-Bold"
+    body: "Inter-Regular"
+    small: "Inter-Regular"
+  animations:
+    duration: 0.3
+    easing: "ease_out_quad"
+
+high_contrast:
+  name: "High Contrast"
+  colors:
+    primary: [0, 0, 0]
+    secondary: [20, 20, 20]
+    tertiary: [40, 40, 40]
+    accent: [255, 255, 0]
+    success: [0, 255, 0]
+    warning: [255, 255, 0]
+    error: [255, 0, 0]
+    text_primary: [255, 255, 255]
+    text_secondary: [200, 200, 200]
+  fonts:
+    h1: "Inter-Bold"
+    h2: "Inter-Bold"
+    h3: "Inter-Bold"
+    body: "Inter-Regular"
+    small: "Inter-Regular"
+  animations:
+    duration: 0.3
+    easing: "ease_out_quad"
+
+# Component styles
+component_styles:
+  button_primary:
+    background_color: "accent"
+    text_color: "text_primary"
+    corner_radius: 8
+    padding: [10, 20]
+  
+  button_secondary:
+    background_color: "tertiary"
+    text_color: "text_primary"
+    corner_radius: 8
+    padding: [10, 20]
+  
+  card:
+    background_color: "tertiary"
+    border_color: "secondary"
+    border_width: 1
+    corner_radius: 12
+    padding: 15
+  
+  input:
+    background_color: "secondary"
+    border_color: "tertiary"
+    border_width: 2
+    corner_radius: 6
+    text_color: "text_primary"

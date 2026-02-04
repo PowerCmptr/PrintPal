@@ -1,0 +1,86 @@
+# PrintPal Configuration
+
+# Display settings
+display:
+  width: 320
+  height: 240
+  rotate: 0
+  bpp: 16
+  framebuffer: "/dev/fb0"
+  brightness: 1.0
+  dim_timeout: 30
+  dim_brightness: 0.3
+
+# Input settings
+input:
+  type: "rotary_encoder"  # rotary_encoder, keyboard, touch
+  encoder:
+    clk_pin: 13
+    dt_pin: 26
+    sw_pin: 19
+    pull_up: true
+  keyboard:
+    up_key: "w"
+    down_key: "s"
+    left_key: "a"
+    right_key: "d"
+    select_key: " "
+    back_key: "escape"
+
+# UI settings
+ui:
+  theme: "dark"  # dark, light, high_contrast
+  animation_speed: 1.0
+  font_size: "normal"  # small, normal, large
+  language: "en"
+  screen_transitions: true
+  screensaver_timeout: 300  # seconds, 0 to disable
+
+# Printer connection
+printer:
+  type: "moonraker"  # moonraker, klipper, octoprint, dummy
+  moonraker:
+    host: "127.0.0.1"
+    port: 7125
+    api_key: ""
+  klipper:
+    host: "127.0.0.1"
+    port: 7125
+  octoprint:
+    host: "127.0.0.1"
+    port: 5000
+    api_key: ""
+  dummy:
+    demo_mode: true
+    update_interval: 2.0
+
+# Temperature presets
+temperature_presets:
+  pla:
+    bed: 60
+    nozzle: 210
+  petg:
+    bed: 80
+    nozzle: 240
+  abs:
+    bed: 100
+    nozzle: 250
+  tpu:
+    bed: 50
+    nozzle: 220
+
+# Network settings
+network:
+  wifi_interface: "wlan0"
+  hotspot:
+    enabled: false
+    ssid: "PrintPal-AP"
+    password: "printpal123"
+    channel: 6
+
+# System settings
+system:
+  log_level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  auto_start: true
+  update_check: true
+  backup_config: true
